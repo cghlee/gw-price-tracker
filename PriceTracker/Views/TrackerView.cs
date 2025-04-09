@@ -1,11 +1,12 @@
-using PriceTracker.Controllers;
+using PriceTracker.Controllers.Interfaces;
+using PriceTracker.Views.Interfaces;
 
 namespace PriceTracker.Views;
 
-class TrackerView
+class TrackerView : ITrackerView
 {
-    private TrackerController _trackerController;
-    public TrackerView(TrackerController trackerController)
+    private ITrackerController _trackerController;
+    public TrackerView(ITrackerController trackerController)
     {
         _trackerController = trackerController;
     }

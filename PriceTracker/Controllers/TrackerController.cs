@@ -1,11 +1,12 @@
-using PriceTracker.Services;
+using PriceTracker.Controllers.Interfaces;
+using PriceTracker.Services.Interfaces;
 
 namespace PriceTracker.Controllers;
 
-class TrackerController
+class TrackerController : ITrackerController
 {
-    private TrackerService _trackerService;
-    public TrackerController(TrackerService trackerService)
+    private ITrackerService _trackerService;
+    public TrackerController(ITrackerService trackerService)
     {
         _trackerService = trackerService;
     }
