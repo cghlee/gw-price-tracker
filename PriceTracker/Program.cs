@@ -1,4 +1,5 @@
 ﻿using PriceTracker.Controllers;
+using PriceTracker.Helpers;
 using PriceTracker.Services;
 using PriceTracker.Views;
 
@@ -10,7 +11,8 @@ internal class Program
     {
         TrackerService trackerService = new TrackerService();
         TrackerController trackerController = new TrackerController(trackerService);
-        TrackerView trackerView = new TrackerView(trackerController);
+        PromptProvider promptProvider = new PromptProvider();
+        TrackerView trackerView = new TrackerView(trackerController, promptProvider);
 
         trackerView.Run();
     }
