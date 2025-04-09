@@ -4,9 +4,9 @@ using PriceTracker.Views;
 
 namespace PriceTracker;
 
-class Program
+internal class Program
 {
-    static void Main()
+    internal static void Main()
     {
         TrackerService trackerService = new TrackerService();
         TrackerController trackerController = new TrackerController(trackerService);

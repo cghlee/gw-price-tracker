@@ -2,7 +2,7 @@ using PriceTracker.Services.Interfaces;
 
 namespace PriceTracker.Services;
 
-class TrackerService : ITrackerService
+internal class TrackerService : ITrackerService
 {
     
 }
