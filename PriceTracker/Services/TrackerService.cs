@@ -1,4 +1,4 @@
-using PriceTracker.Models.Interfaces;
+using PriceTracker.Repositories.Interfaces;
 using PriceTracker.Services.Interfaces;
 
 namespace PriceTracker.Services;

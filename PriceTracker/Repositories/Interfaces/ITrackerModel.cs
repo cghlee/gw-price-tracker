@@ -1,4 +1,4 @@
-namespace PriceTracker.Models.Interfaces;
+namespace PriceTracker.Repositories.Interfaces;
 
 internal interface ITrackerModel
 {

@@ -1,6 +1,6 @@
 ﻿using PriceTracker.Controllers;
 using PriceTracker.Helpers;
-using PriceTracker.Models;
+using PriceTracker.Repositories;
 using PriceTracker.Services;
 using PriceTracker.Views;
 

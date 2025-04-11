@@ -1,7 +1,7 @@
 using PriceTracker.Helpers.Interfaces;
-using PriceTracker.Models.Interfaces;
+using PriceTracker.Repositories.Interfaces;
 
-namespace PriceTracker.Models;
+namespace PriceTracker.Repositories;
 
 internal class TrackerModel : ITrackerModel
 {
