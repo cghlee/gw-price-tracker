@@ -5,15 +5,15 @@ namespace PriceTracker.Services;
 
 internal class TrackerService : ITrackerService
 {
-    private ITrackerModel _trackerModel;
-    internal TrackerService(ITrackerModel trackerModel)
+    private ITrackerRepository _trackerRepository;
+    internal TrackerService(ITrackerRepository trackerRepository)
     {
-        _trackerModel = trackerModel;
+        _trackerRepository = trackerRepository;
     }
     
     public bool HasExistingData()
     {
-        bool hasExistingData = _trackerModel.HasExistingData();
+        bool hasExistingData = _trackerRepository.HasExistingData();
         return hasExistingData;
     }
 }

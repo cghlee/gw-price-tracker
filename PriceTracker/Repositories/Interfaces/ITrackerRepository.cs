@@ -1,6 +1,6 @@
 namespace PriceTracker.Repositories.Interfaces;
 
-internal interface ITrackerModel
+internal interface ITrackerRepository
 {
     public bool HasExistingData();
 }

@@ -11,8 +11,8 @@ internal class Program
     internal static void Main()
     {
         FileManager fileManager = new FileManager();
-        TrackerModel trackerModel = new TrackerModel(fileManager);
-        TrackerService trackerService = new TrackerService(trackerModel);
+        TrackerRepository trackerRepository = new TrackerRepository(fileManager);
+        TrackerService trackerService = new TrackerService(trackerRepository);
         TrackerController trackerController = new TrackerController(trackerService);
         PromptProvider promptProvider = new PromptProvider();
         TrackerView trackerView = new TrackerView(trackerController, promptProvider);

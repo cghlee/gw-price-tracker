@@ -3,10 +3,10 @@ using PriceTracker.Repositories.Interfaces;
 
 namespace PriceTracker.Repositories;
 
-internal class TrackerModel : ITrackerModel
+internal class TrackerRepository : ITrackerRepository
 {
     private IFileManager _fileManager;
-    internal TrackerModel(IFileManager fileManager)
+    internal TrackerRepository(IFileManager fileManager)
     {
         _fileManager = fileManager;
     }
