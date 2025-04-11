@@ -10,4 +10,10 @@ internal class TrackerModel : ITrackerModel
     {
         _fileManager = fileManager;
     }
+    
+    public bool HasExistingData()
+    {
+        bool hasExistingData = _fileManager.HasExistingData();
+        return hasExistingData;
+    }
 }

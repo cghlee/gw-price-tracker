@@ -16,6 +16,18 @@ internal class TrackerView : ITrackerView
 
     public void Run()
     {
-        Console.WriteLine("Testing.");
+        bool hasExistingData = _trackerController.HasExistingData();
+        Console.WriteLine(hasExistingData);
+        
+        // if (hasExistingData)
+        // {
+        //     _trackerController.ImportExistingData();
+        //     Console.WriteLine(_promptProvider.GetDataImportedString(true));
+        // }
+        // else
+        // {
+        //     _trackerController.CreateNewDataFile();
+        //     Console.WriteLine(_promptProvider.GetDataImportedString(false));
+        // }
     }
 }

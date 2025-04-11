@@ -10,4 +10,10 @@ internal class TrackerService : ITrackerService
     {
         _trackerModel = trackerModel;
     }
+    
+    public bool HasExistingData()
+    {
+        bool hasExistingData = _trackerModel.HasExistingData();
+        return hasExistingData;
+    }
 }
