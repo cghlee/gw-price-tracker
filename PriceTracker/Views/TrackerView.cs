@@ -16,6 +16,11 @@ internal class TrackerView : ITrackerView
 
     public void Run()
     {
+        ResolveExistingData();
+    }
+
+    private void ResolveExistingData()
+    {
         bool hasExistingData = _trackerController.HasExistingData();
         Console.WriteLine(hasExistingData);
         
